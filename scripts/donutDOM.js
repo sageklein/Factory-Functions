@@ -1,9 +1,9 @@
-import donutHTML from "./donutHTML.js"
 
-//Responsible for showing donut ion the DOM
+import makeDonutHTMLComponent from "./donutHTML.js"
 
-const donutDOMBuilder = (donutObj) => {
-    document.querySelector(".donut-container").innerHTML += donutHTML(donutObj)
+// Function that adds donut HTML components to the DOM
+const addDonutToDOM = (donutObj) => {
+    document.querySelectorAll(".donut-container")[1].innerHTML += makeDonutHTMLComponent(donutObj)
 }
 
-export default donutDOMBuilder
+export default addDonutToDOM

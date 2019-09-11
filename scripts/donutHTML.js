@@ -1,19 +1,18 @@
-//It represents what a donut should look like in HTML
-
-const donutHTML = (donut) => {
+// Function that defines what a donut should look like in HTML
+const makeDonutHTMLComponent = (donut) => {
     return `
     <div class="donut">
         <h3>${donut.name}</h3>
-        <h4>Donut Type:</h4>
+        <h4>Type:</h4>
         <p>${donut.type}</p>
-        <h4>Donut Flavor:</h4>
+        <h4>Flavor:</h4>
         <p>${donut.flavor}</p>
-        <h4>Donut Glaze:</h4>
+        <h4>Glaze:</h4>
         <p>${donut.glaze}</p>
-        <h4>Donut Topping:</h4>
+        <h4>Toppings:</h4>
         <p>${donut.topping}</p>
     </div>
     `
 }
 
-export default donutHTML
+export default makeDonutHTMLComponent
