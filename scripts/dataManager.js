@@ -1,5 +1,5 @@
 /*
-    Resposible for ANY calls made to the database
+    Responsible for ANY calls made to the database
 */
 
 const API = {
